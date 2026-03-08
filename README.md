@@ -12,6 +12,9 @@ To guarantee the integrity of the insights delivered to the executive team, a st
 * **Client Dependency Check:** Analyzed the purchasing weight of the top 10 accounts to determine customer bargaining power and assess the company's reliance on outlier buyers.
 
 ## Dashboard Features & Key Findings
+
+> Use File `Task 3 Dashboard.pbix`
+
 The final visualizations were designed to directly answer leadership's core business questions with high-impact data points:
 
 * **Seasonal Revenue Curves:** Time-series tracking revealed a consistent baseline of roughly $685k in revenue from January through August. This is followed by a dramatic 40% surge in September, ultimately climaxing at $1.5 million in November.
