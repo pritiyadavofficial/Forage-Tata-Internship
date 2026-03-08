@@ -1,24 +1,28 @@
-# Predicting SME Customer Attrition for Energy Providers
+# Strategic Retail Analytics & Visualization Portfolio
 
-## Project Background
-This repository houses a complete predictive analytics solution developed as part of the Forage Boston Consulting Group (BCG) Data Science Virtual Experience. 
+## Project Context
+This repository showcases a comprehensive business intelligence project completed during the Tata Data Visualisation Virtual Experience on Forage. The primary objective was to transform messy, raw retail transaction data into polished executive dashboards that drive strategic decision-making. Leadership needed clear answers regarding seasonal sales patterns, the viability of non-UK international markets, and the concentration of revenue among top-tier clients. This project successfully bridged the gap between raw numbers and actionable corporate strategy.
 
-**The Business Challenge:** A leading energy utility company noticed a troubling increase in churn within their Small and Medium Enterprise (SME) portfolio. The executive team hypothesized that clients were abandoning the service primarily due to price sensitivity. My objective was to rigorously test this assumption using historical data, build a machine learning pipeline to forecast future cancellations, and deliver data-backed retention strategies to leadership.
+## Data Preparation & Analytical Approach
+To guarantee the integrity of the insights delivered to the executive team, a strict data processing pipeline was established:
 
-## Methodology & Technical Approach
-To translate raw business data into proactive retention strategies, I executed an end-to-end data science pipeline:
+* **Data Cleansing:** Eradicated anomalies from the raw dataset by stripping out all rows containing negative unit prices or negative order quantities, establishing a pristine foundation for analysis.
+* **Temporal Analysis:** Modeled month-over-month revenue to uncover seasonal behaviors, establishing a baseline run-rate for the first eight months and calculating the late-year growth trajectory (intentionally excluding incomplete December figures).
+* **Geographic Filtering:** Deliberately removed the dominant, saturated UK market from the dataset to properly isolate and evaluate the sales volume and revenue potential of emerging international regions.
+* **Client Dependency Check:** Analyzed the purchasing weight of the top 10 accounts to determine customer bargaining power and assess the company's reliance on outlier buyers.
 
-1. **Data Transformation & Feature Engineering:** Synthesized raw consumption logs, financial margins, and historical pricing records into structured, high-value features ready for machine learning ingestion.
-2. **Algorithm Implementation:** Selected and trained a Random Forest Classifier. This model was chosen specifically for its capacity to capture non-linear relationships and complex interactions within the dataset to predict binary churn events.
-3. **Performance Validation:** Audited the model's predictive power using Precision and Recall metrics. Furthermore, the model was tuned to output continuous probability scores rather than just binary labels to better prioritize at-risk accounts.
-4. **Driver Extraction:** Leveraged the Random Forest's feature importance attributes to reverse-engineer the model and isolate the core variables dictating a client's decision to leave.
+## Dashboard Features & Key Findings
+The final visualizations were designed to directly answer leadership's core business questions with high-impact data points:
 
-## Deliverables
-To ensure technical findings translated seamlessly into business operations, the final output was formatted for executive use. The pipeline generates a final dataset (`out_of_sample_data_with_predictions.csv`) that maps unseen SME accounts to their specific churn probability scores. This allows the business to feed these predictions directly into their CRM without requiring their teams to interact with the underlying Python architecture.
+* **Seasonal Revenue Curves:** Time-series tracking revealed a consistent baseline of roughly $685k in revenue from January through August. This is followed by a dramatic 40% surge in September, ultimately climaxing at $1.5 million in November.
+* **International Growth Leaders:** With the UK filtered out, a targeted bar chart identified the Netherlands, Ireland, Germany, and France as the premier high-volume performance centers.
+* **Client Revenue Distribution:** A comparative breakdown of the top 10 buyers illustrated a highly diversified revenue stream. The number one purchasing account generated only 17% more revenue than the second-highest, proving the business is not dangerously reliant on a single "whale" client.
+* **Global Heatmap:** Spatial mapping exposed a heavy market presence in Europe and Australia, contrasted by minimal traction in the Americas and a complete lack of sales across Africa, Asia, and Russia.
 
-## Key Findings & Strategic Roadmap
-Based on the machine learning feature importance analysis, I proposed the following strategic pivots to the executive team:
+## Executive Recommendations
+Driven by the dashboard findings, the following strategies are proposed to maximize future profitability:
 
-* **Pivot Away from Blanket Discounts:** The executive hypothesis was largely incorrect. The model proved that price sensitivity is only a minor contributor to customer attrition. Engaging in broad price-cutting strategies will needlessly damage company profits without significantly improving retention.
-* **Focus on Key Drivers (Margins & Usage):** The data shows that the true catalysts for churn are "Net margin and consumption over 12 months" and "Margin on power subscription." Retention teams should immediately redirect their efforts toward high-margin, heavy-consumption SMEs, especially those showing recent volatility in their energy usage.
-* **Next Steps for Optimization:** While the model successfully ranks risk and identifies primary drivers, the business should invest in targeted A/B testing. Continued experimentation will help determine the exact price-sensitivity thresholds that eventually push a customer to a competitor.
+* **Optimize for Q4 Demand:** The data proves that September through November is the undisputed peak season. Operations, inventory management, and marketing budgets must be heavily synchronized to capture maximum market share during these months.
+* **Scale Proven International Markets:** Because the UK market is already saturated, leadership should redirect localized expansion budgets toward the highest-performing secondary markets—specifically the Netherlands, Ireland, Germany, France, and Australia.
+* **Target Global Whitespace:** The geographic mapping reveals a massive, untapped strategic opportunity. Formulating dedicated market-entry strategies for the Americas, Asia, Africa, and Russia could unlock entirely new global revenue streams.
+* **Preserve Client Diversification:** The currently low bargaining power of individual buyers is a major structural strength. The company must maintain a wide-net customer acquisition strategy to ensure revenue never becomes critically concentrated in just a few top accounts.
