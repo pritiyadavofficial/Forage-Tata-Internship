@@ -29,3 +29,8 @@ Driven by the dashboard findings, the following strategies are proposed to maxim
 * **Scale Proven International Markets:** Because the UK market is already saturated, leadership should redirect localized expansion budgets toward the highest-performing secondary markets—specifically the Netherlands, Ireland, Germany, France, and Australia.
 * **Target Global Whitespace:** The geographic mapping reveals a massive, untapped strategic opportunity. Formulating dedicated market-entry strategies for the Americas, Asia, Africa, and Russia could unlock entirely new global revenue streams.
 * **Preserve Client Diversification:** The currently low bargaining power of individual buyers is a major structural strength. The company must maintain a wide-net customer acquisition strategy to ensure revenue never becomes critically concentrated in just a few top accounts.
+
+---
+<br>
+
+![Certificate](Certificate-Tata.png)
